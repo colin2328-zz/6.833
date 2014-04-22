@@ -1,0 +1,30 @@
+<project>  
+<student>Cody Coleman and Colin Taylor</student>  
+<title>Inferring Concept Graphs from Student Answers in MOOCs</title>  
+<vision>  
+If we are going to understand how students learn in MOOCs, then we need to understand how the underlying concept graph is linked to a student’s performance.
+</vision>  
+<type>  
+Pilot Study
+</type>  
+<steps>  
+<ul>
+<li>
+Generate concept graph and a set of questions which tests a subject’s knowledge of the concepts.
+</li> <li>
+Run the following experiment with ~15 people: (1) Teach the subject a subset of the concepts. (2) Record the subject’s answers to the entire question set.
+</li> <li>
+Try to reconstruct the underlying concept graph using the results of our experiment and compare the result with the original concept graph.
+</li>
+</ul>  
+</steps>  
+<contributions>  
+<ul> 
+<li>
+Reconstructed concept graph from student responses.
+</li><li> 
+Quantified the underlying concept graph’s impact on student performance
+</li> 
+</ul> 
+</contributions>   
+</project>
