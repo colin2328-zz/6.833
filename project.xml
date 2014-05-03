@@ -5,16 +5,17 @@
 If we are going to understand how students learn in MOOCs, then we need to understand how the underlying concept graph is linked to a student’s performance.
 </vision>  
 <type>  
-Pilot Study
+Research project with implementation
 </type>  
 <steps>  
 <ul>
-<li>
-Generate concept graph and a set of questions which tests a subject’s knowledge of the concepts.
+<li>Survey studies on understanding student knowledge in intelligence tutoring systems (such as CMUs research involving knowledge components).
 </li> <li>
-Run the following experiment with ~15 people: (1) Teach the subject a subset of the concepts. (2) Record the subject’s answers to the entire question set.
+Obtain and clean actual student data from an geometry math class taught on an intelligent tutoring system, including hypothesized knowledge components. This data is from the "Geometry Area 1996" class by Ken Koedinger. It includes data on 59 students, including 139 unique problems.
 </li> <li>
-Try to reconstruct the underlying concept graph using the results of our experiment and compare the result with the original concept graph.
+Perform exploratory analysis on student data to understand how we can model the concept graph. Our hypothesized graph is a DAG connecting all knowledge components. 
+</li> <li>
+Try to reconstruct the underlying concept graph using the results of our experiment.
 </li>
 </ul>  
 </steps>  
