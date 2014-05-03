@@ -1,0 +1,31 @@
+<project>  
+<student>Cody Coleman and Colin Taylor</student>  
+<title>Inferring Concept Graphs from Student Answers in MOOCs</title>  
+<vision>  
+If we are going to understand how students learn in MOOCs, then we need to understand how the underlying concept graph is linked to a student’s performance.
+</vision>  
+<type>  
+Research project with implementation
+</type>  
+<steps>  
+<ul>
+<li>Survey studies on understanding student knowledge in intelligence tutoring systems (such as CMUs research involving knowledge components).
+</li> <li>
+Obtain and clean actual student data from an geometry math class taught on an intelligent tutoring system, including hypothesized knowledge components. This data is from the "Geometry Area 1996" class by Ken Koedinger. It includes data on 59 students, including 139 unique problems.
+</li> <li>
+Perform exploratory analysis on student data to understand how we can model the concept graph. Our hypothesized graph is a DAG connecting all knowledge components. 
+</li> <li>
+Try to reconstruct the underlying concept graph using the results of our experiment.
+</li>
+</ul>  
+</steps>  
+<contributions>  
+<ul> 
+<li>
+Reconstructed concept graph from student responses.
+</li><li> 
+Quantified the underlying concept graph’s impact on student performance
+</li> 
+</ul> 
+</contributions>   
+</project>
