@@ -1,6 +1,7 @@
 import edmonds
 import pandas as pd
 from collections import defaultdict
+from pandas import DataFrame
 
 '''Get the graph for a KC column- usually either 'KC (Original)'' or 'KC' '''
 def get_graph(kc_column):
@@ -33,13 +34,16 @@ def get_graph(kc_column):
 			for kc in seen:
 				trans[row['kc']][kc] += 1
 			seen.add(row['kc'])
+	# Create a dataframe of transition probabilities from the counts
+	correct_prob = DataFrame(trans) / correct_firsts['kc'].value_counts()
 
-	return trans
+	return correct_prob.to_dict()
 
 G = get_graph('KC (Original)')
-G = get_graph('KC')
+# G = get_graph('KC')
 print G
 
+#loop through root to get the minimum weighted 
 min_weight = 1e5
 min_h = None
 for root in G.keys():
@@ -48,9 +52,8 @@ for root in G.keys():
 	for s in h:
 		for t in h[s]:
 			total_weight += G[s][t]
-			# print "%s->%s (weight: %s)" % (s,t,G[s][t])
-	# print "total_weight", total_weight
 	if total_weight < min_weight:
+		# print "min weight is %s. Total weight is %s" % (root, total_weight)
 		min_weight = total_weight
 		min_h = h
 
