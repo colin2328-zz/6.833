@@ -35,7 +35,7 @@ def get_graph(kc_column):
 				trans[row['kc']][kc] += 1
 			seen.add(row['kc'])
 	# Create a dataframe of transition probabilities from the counts
-	correct_prob = DataFrame(trans) / correct_firsts['kc'].value_counts()
+	correct_prob = (1- (DataFrame(trans) / correct_firsts['kc'].value_counts()).T)
 
 	return correct_prob.to_dict()
 
@@ -57,6 +57,6 @@ for root in G.keys():
 		min_weight = total_weight
 		min_h = h
 
-for s in h:
+for s in min_h:
 	for t in h[s]:
-		print "%s->%s (weight: %s)" % (s,t,G[s][t])
+		print "%s->%s (weight: %s)" % (s,t, (1- G[s][t]))

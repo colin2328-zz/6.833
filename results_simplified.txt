@@ -1,0 +1,15 @@
+A is start node
+
+A->H (weight: 0.870967741935)
+A->C (weight: 0.931818181818)
+A->B (weight: 0.848484848485)
+A->D (weight: 0.810810810811)
+A->G (weight: 0.783783783784)
+D->E (weight: 0.914285714286)
+D->F (weight: 0.971428571429)
+G->I (weight: 0.857142857143)
+G->K (weight: 0.882352941176)
+I->J (weight: 1.0)
+I->M (weight: 0.794871794872)
+I->L (weight: 0.885714285714)
+L->O (weight: 0.971428571429)
